@@ -4,12 +4,6 @@ test("Equal One", () => {
   expect(randomNumber(1, 1)).toBe(1);
 });
 
-// describe('Equale One', () =>{
-//     it('should input 1', () =>{
-//         expect(randomNumber(1,1)).toBe(1)
-//     })
-// })
-
 test("should return a value in the range from min to max", () => {
   const min = 1;
   const max = 10;
@@ -18,6 +12,6 @@ test("should return a value in the range from min to max", () => {
   expect(value).toBeLessThan(max);
 });
 
-test("should throw an error if min is greater than max", () =>{
-    expect(() => randomNumber(4, 3)).toThrow(RangeError);
+test("should throw an error if min is greater than max", () => {
+  expect(() => randomNumber(4, 3)).toThrow(RangeError);
 });
